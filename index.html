@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Checklist Simulator</title>
+</head>
+<body>
+    <header>
+        <h1>Document Center</h1>
+        <p>Educational simulation only — not an official service.</p>
+    </header>
+
+    <main>
+        <section aria-labelledby="service-heading">
+            <h2 id="service-heading">Choose a Service</h2>
+            <select id="category-select" aria-label="Choose a service category">
+                <option value="student-registration">Student Registration</option>
+                <option value="library-membership">Library Membership</option>
+                <option value="event-registration">Event Registration</option>
+            </select>
+        </section>
+
+        <section aria-labelledby="progress-heading">
+            <h2 id="progress-heading">Your Progress</h2>
+            <p id="progress-count">0 of 5 documents completed</p>
+            <p id="progress-percentage">0%</p>
+            <progress id="progress-bar" value="0" max="100">0%</progress>
+        </section>
+
+        <section aria-labelledby="checklist-heading">
+            <h2 id="checklist-heading">Required Documents</h2>
+            <div id="checklist-container">
+                <p>Your checklist will appear here.</p>
+            </div>
+            <button id="reset-button" type="button">Reset Current Category</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Practice with fictional documents only. Do not enter personal information.</p>
+    </footer>
+</body>
+</html>
